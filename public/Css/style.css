@@ -8,6 +8,10 @@
   font-family: "HYQiHei";
   src: url("/fonts/HYQiHei-65S Medium.ttf");
 }
+.text-none {
+  text-decoration: none;
+}
+
 .vivoHeader .headertop {
   background: #000;
   padding: 10px;

@@ -9,6 +9,7 @@ import { RxCross1 } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from 'react-router-dom';
 
 function Shop() {
 
@@ -439,6 +440,7 @@ function Shop() {
                                         <div className="smartPhoneSeries">
                                             <div className="row gy-3">
                                                 <div className="col-lg-3 col-6">
+                                                    <Link className='text-none' to={'/productdetail'} >
                                                     <div className="card">
                                                         <img src="\images\Phone1.png" alt="" />
                                                         <div className="content">
@@ -455,6 +457,8 @@ function Shop() {
                                                             OFFER
                                                         </div>
                                                     </div>
+                                                    </Link>
+                                                    
                                                 </div>
 
                                                 <div className="col-lg-3 col-6">
