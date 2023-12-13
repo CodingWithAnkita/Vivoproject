@@ -1067,7 +1067,7 @@
 .VideoGalleryDiv {
     background: #f5f5f5;
     padding-top: 90px;
-    padding-bottom: 90px;
+    // padding-bottom: 90px;
 
     @media screen and (max-width:576px) {
         padding-top: 50px;
@@ -1151,7 +1151,7 @@
 
 // Application PAge
 .ApplicationsPage {
-    // padding-top: 90px;
+    padding-top: 90px;
     padding-bottom: 90px;
     background: #f5f5f5;
 
@@ -1614,7 +1614,7 @@
 
             .allProds {
 
-               
+
 
                 .selListSortSec {
                     display: flex;
@@ -1770,7 +1770,7 @@
                                     }
                                 }
 
-                                button {
+                                .percentOff {
                                     color: #000;
                                     text-align: center;
                                     font-size: 12px;
@@ -1779,6 +1779,8 @@
                                     border-radius: 3px;
                                     margin-left: 5px;
                                     padding: 5px;
+                                    background: white;
+                                    border: 1px solid black;
 
                                     @media screen and (max-width:376px) {
                                         font-size: 7px;
@@ -2082,5 +2084,532 @@
             }
 
         }
+    }
+}
+
+.productDetailPage {
+    background: #F5F5F5;
+
+    .ProductDetail {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        background: white;
+
+        .ProductPath {
+            .details {
+                color: #000;
+                font-family: HYQiHei;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+
+    .ProductDetailSection {
+        .product-Dividation {
+            background: white;
+            padding-top: 48px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 80px;
+
+            .imgDiv {
+                padding-bottom: 30px;
+
+                .img1 {
+                    padding-top: 5px;
+                }
+
+                .btnDiv {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 30px;
+                    margin-bottom: 20px;
+
+
+                    .btn1 {
+                        flex: 1;
+                        color: #fff;
+                        border-radius: 5px;
+                        background: #000;
+                        padding: 14px 26px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        border: 0px solid black;
+                        outline: none;
+                        transition: all .4s
+                    }
+
+                    .btn2 {
+                        flex: 1;
+                        color: #fff;
+                        border-radius: 5px;
+                        background: #415FFF;
+                        padding: 14px 26px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        border: 0px solid black;
+                        outline: none;
+                    }
+                }
+
+            }
+
+            .ProductDetails-Content {
+                padding-left: 20px;
+                // padding-right: 20px;
+
+                .productName {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    column-gap: 15px;
+
+                    .smallHeading {
+                        color: #000;
+                        // text-align: center;
+                        font-family: HYQiHei;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+
+                    }
+
+                    .largeHeading {
+                        color: #505050;
+                        // text-align: center;
+                        font-family: HYQiHei;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+                    }
+                }
+
+                .prices {
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #E1E1E1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 15px;
+
+                    .redPrice {
+                        color: #e61423;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                    }
+
+                    .delprice {
+                        color: #505050;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                        text-decoration-line: line-through;
+                    }
+
+                    .offPercent {
+                        border-radius: 3px;
+                        background: #415FFF;
+                        padding: 4px;
+                        color: #fff;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .TaxesDiv {
+                        color: #aaa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 22px;
+                    }
+                }
+
+                .Availableoffers {
+                    padding-top: 20px;
+
+                    .offers {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .BankOffer {
+                        display: flex;
+                        overflow-x: scroll;
+                        column-gap: 10px;
+                        padding-top: 20px;
+                        overflow-x: scroll;
+
+                        &::-webkit-scrollbar {
+                            width: 10px;
+                        }
+
+                        /* Track */
+                        &::-webkit-scrollbar-track {
+                            background: #ffffff;
+                        }
+
+                        /* Handle */
+                        &::-webkit-scrollbar-thumb {
+                            background: #888;
+                        }
+
+                        /* Handle on hover */
+                        &::-webkit-scrollbar-thumb:hover {
+                            background: #555;
+                        }
+
+                        .offersec {
+                            width: 180px;
+                            height: 170px;
+                            border-radius: 10px;
+                            padding: 18px 27px;
+                            background: rgba(255, 140, 0, 0.15);
+                        }
+
+                        h2 {
+                            color: #000;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+
+                        span {
+                            color: #505050;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+
+                        h6 {
+                            color: #415FFF;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                .colourDiv {
+                    padding-top: 20px;
+
+                    .colorImg {
+                        padding-top: 20px;
+
+                        .img-sec {
+                            .content {
+                                color: #000;
+                                text-align: center;
+                                font-family: HYQiHei;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .RAMSec {
+                    padding-top: 25px;
+
+                    .RAM {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .RAMStorage {
+                        justify-content: space-between;
+                        display: flex;
+                        align-items: center;
+                        padding-top: 20px;
+
+                        .RAMDetail1 {
+                            padding: 15px 20px;
+                            border-radius: 5px;
+                            border: 1px solid #FF8C00;
+                            color: #FF8C00;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+
+                        .RAMDetail2 {
+                            padding: 15px 20px;
+                            border-radius: 5px;
+                            border: 1px solid #505050;
+                            color: #000;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+
+                        .RAMDetail3 {
+                            padding: 15px 20px;
+                            border-radius: 5px;
+                            border: 1px solid #505050;
+                            color: #000;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .QuantitySec {
+                    margin-top: 30px;
+
+                    .quantityHead {
+
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .quantity {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        column-gap: 20px;
+
+                        .min {
+                            padding: 10px 20px;
+                            color: #505050;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 32px;
+                            border-radius: 5px;
+                            border: 1px solid #505050;
+                            outline: none;
+                            background: transparent;
+                        }
+
+                        .plus {
+                            padding: 10px 20px;
+                            color: #505050;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 32px;
+                            border-radius: 5px;
+                            border: 1px solid #505050;
+                            outline: none;
+                            background: transparent;
+                        }
+                    }
+                }
+
+                .DelieverySec {
+                    margin-top: 30px;
+
+                    .delievery {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .codeShip {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        column-gap: 10px;
+
+                        .pincode {
+                            // display: flex;
+                            padding: 15px 20px;
+                            border-radius: 5px;
+                            border: 1px solid #415FFF;
+
+                            input {
+                                width: 142px;
+                                outline: none;
+                                border: none;
+                                color: #505050;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 22px;
+                            }
+
+
+                            .check {
+                                margin-left: 20px;
+                                border: none;
+                                outline: none;
+                                background: transparent;
+                                color: #415fff;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 22px;
+                            }
+                        }
+
+                        .freeShip {
+                            color: #415FFF;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+
+                        }
+
+                        .business {
+                            color: #505050;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+                    }
+
+
+
+                }
+
+                .HighlightsSec {
+                    margin-top: 30px;
+
+                    .highText {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .highlight {
+                        padding-top: 20px;
+
+                        ul {
+                            li {
+                                padding-top: 10px;
+                                color: #505050;
+                                font-family: HYQiHei;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 22px;
+                                /* 157.143% */
+                            }
+                        }
+                    }
+                }
+
+                .SpecificationSec {
+                    margin-top: 30px;
+                    border: 1px solid #E1E1E1;
+                    padding: 20px;
+
+                    .specific {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+
+                    }
+
+                    .spectification {
+                        .heading {
+                            padding-top: 25px;
+                            color: #000;
+                            font-family: HYQiHei;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-top: 20px;
+                            border-top: 1px solid #E1E1E1;
+                        }
+
+                        .MainDiv {
+                            padding-top: 22px;
+
+                            .leftDiv {
+                                color: #505050;
+                                font-family: HYQiHei;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 22px;
+                                padding-top: 10px;
+                                width: 180px;
+                            }
+
+                            .rightDiv {
+                                color: #000;
+                                font-family: HYQiHei;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                // padding-left: 50px;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.BannerPageDiv {
+    img {
+        display: block;
+        width: 100%;
     }
 }

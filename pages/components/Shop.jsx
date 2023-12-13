@@ -447,7 +447,7 @@ function Shop() {
                                                             <h3>₹10,499.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹14,999.00</del>
-                                                                <button>-30% off</button>
+                                                                <div className='percentOff'>-30.00% off</div>
                                                             </div>
                                                         </div>
 
@@ -466,7 +466,7 @@ function Shop() {
                                                             <h3>₹9,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹13,999.00</del>
-                                                                <button>-28% off</button>
+                                                                <div className='percentOff'>-28.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -484,7 +484,7 @@ function Shop() {
                                                             <h3>₹12,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹17,999.00</del>
-                                                                <button>-27% off</button>
+                                                                <div className='percentOff'>-27.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -502,7 +502,7 @@ function Shop() {
                                                             <h3>₹17,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹23,990.00</del>
-                                                                <button>-24% off</button>
+                                                                <div className='percentOff'>-24.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -525,7 +525,7 @@ function Shop() {
                                                             <h3>₹10,499.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹14,999.00</del>
-                                                                <button>-30% off</button>
+                                                                <div className='percentOff'>-30.00% off</div>
                                                             </div>
                                                         </div>
 
@@ -544,7 +544,7 @@ function Shop() {
                                                             <h3>₹9,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹13,999.00</del>
-                                                                <button>-28% off</button>
+                                                                <div className='percentOff'>-28.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -562,7 +562,7 @@ function Shop() {
                                                             <h3>₹12,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹17,999.00</del>
-                                                                <button>-27% off</button>
+                                                                <div className='percentOff'>-27.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -580,7 +580,7 @@ function Shop() {
                                                             <h3>₹17,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹23,990.00</del>
-                                                                <button>-24% off</button>
+                                                                <div className='percentOff'>-24.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -604,7 +604,7 @@ function Shop() {
                                                             <h3>₹10,499.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹14,999.00</del>
-                                                                <button>-30% off</button>
+                                                                <div className='percentOff'>-30.00% off</div>
                                                             </div>
                                                         </div>
 
@@ -623,7 +623,7 @@ function Shop() {
                                                             <h3>₹9,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹13,999.00</del>
-                                                                <button>-28% off</button>
+                                                                <div className='percentOff'>-28.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -641,7 +641,7 @@ function Shop() {
                                                             <h3>₹12,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹17,999.00</del>
-                                                                <button>-27% off</button>
+                                                                <div className='percentOff'>-27.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">
@@ -659,7 +659,7 @@ function Shop() {
                                                             <h3>₹17,999.00</h3>
                                                             <div className='smallContent'>
                                                                 <del>₹23,990.00</del>
-                                                                <button>-24% off</button>
+                                                                <div className='percentOff'>-24.00% off</div>
                                                             </div>
                                                         </div>
                                                         <div className="Offer">

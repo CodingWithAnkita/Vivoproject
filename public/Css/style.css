@@ -901,7 +901,6 @@
 .VideoGalleryDiv {
   background: #f5f5f5;
   padding-top: 90px;
-  padding-bottom: 90px;
 }
 @media screen and (max-width: 576px) {
   .VideoGalleryDiv {
@@ -987,6 +986,7 @@
 }
 
 .ApplicationsPage {
+  padding-top: 90px;
   padding-bottom: 90px;
   background: #f5f5f5;
 }
@@ -1509,7 +1509,7 @@
     font-size: 10px;
   }
 }
-.productListMain .filterProducts .filterProMain .allProds .smartPhoneSeries .card .content .smallContent button {
+.productListMain .filterProducts .filterProMain .allProds .smartPhoneSeries .card .content .smallContent .percentOff {
   color: #000;
   text-align: center;
   font-size: 12px;
@@ -1518,9 +1518,11 @@
   border-radius: 3px;
   margin-left: 5px;
   padding: 5px;
+  background: white;
+  border: 1px solid black;
 }
 @media screen and (max-width: 376px) {
-  .productListMain .filterProducts .filterProMain .allProds .smartPhoneSeries .card .content .smallContent button {
+  .productListMain .filterProducts .filterProMain .allProds .smartPhoneSeries .card .content .smallContent .percentOff {
     font-size: 7px;
   }
 }
@@ -1749,4 +1751,448 @@
 .Offcanvas-sec .Accordion-sec .accordion .item1 .accordion-body .accordion-checkbox .checkbox .box {
   width: 16px;
   height: 16px;
+}
+
+.productDetailPage {
+  background: #F5F5F5;
+}
+.productDetailPage .ProductDetail {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: white;
+}
+.productDetailPage .ProductDetail .ProductPath .details {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation {
+  background: white;
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .imgDiv {
+  padding-bottom: 30px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .imgDiv .img1 {
+  padding-top: 5px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .imgDiv .btnDiv {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .imgDiv .btnDiv .btn1 {
+  flex: 1;
+  color: #fff;
+  border-radius: 5px;
+  background: #000;
+  padding: 14px 26px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 0px solid black;
+  outline: none;
+  transition: all 0.4s;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .imgDiv .btnDiv .btn2 {
+  flex: 1;
+  color: #fff;
+  border-radius: 5px;
+  background: #415FFF;
+  padding: 14px 26px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 0px solid black;
+  outline: none;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content {
+  padding-left: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .productName {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .productName .smallHeading {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .productName .largeHeading {
+  color: #505050;
+  font-family: HYQiHei;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .prices {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E1E1E1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .prices .redPrice {
+  color: #e61423;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .prices .delprice {
+  color: #505050;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration-line: line-through;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .prices .offPercent {
+  border-radius: 3px;
+  background: #415FFF;
+  padding: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .prices .TaxesDiv {
+  color: #aaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers {
+  padding-top: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .offers {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer {
+  display: flex;
+  overflow-x: scroll;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding-top: 20px;
+  overflow-x: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer::-webkit-scrollbar {
+  width: 10px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer .offersec {
+  width: 180px;
+  height: 170px;
+  border-radius: 10px;
+  padding: 18px 27px;
+  background: rgba(255, 140, 0, 0.15);
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer h2 {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer span {
+  color: #505050;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .Availableoffers .BankOffer h6 {
+  color: #415FFF;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .colourDiv {
+  padding-top: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .colourDiv .colorImg {
+  padding-top: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .colourDiv .colorImg .img-sec .content {
+  color: #000;
+  text-align: center;
+  font-family: HYQiHei;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec {
+  padding-top: 25px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec .RAM {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec .RAMStorage {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec .RAMStorage .RAMDetail1 {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #FF8C00;
+  color: #FF8C00;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec .RAMStorage .RAMDetail2 {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #505050;
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .RAMSec .RAMStorage .RAMDetail3 {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #505050;
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .QuantitySec {
+  margin-top: 30px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .QuantitySec .quantityHead {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .QuantitySec .quantity {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .QuantitySec .quantity .min {
+  padding: 10px 20px;
+  color: #505050;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  border-radius: 5px;
+  border: 1px solid #505050;
+  outline: none;
+  background: transparent;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .QuantitySec .quantity .plus {
+  padding: 10px 20px;
+  color: #505050;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  border-radius: 5px;
+  border: 1px solid #505050;
+  outline: none;
+  background: transparent;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec {
+  margin-top: 30px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .delievery {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip .pincode {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #415FFF;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip .pincode input {
+  width: 142px;
+  outline: none;
+  border: none;
+  color: #505050;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip .pincode .check {
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #415fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip .freeShip {
+  color: #415FFF;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .DelieverySec .codeShip .business {
+  color: #505050;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .HighlightsSec {
+  margin-top: 30px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .HighlightsSec .highText {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .HighlightsSec .highlight {
+  padding-top: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .HighlightsSec .highlight ul li {
+  padding-top: 10px;
+  color: #505050;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  /* 157.143% */
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec {
+  margin-top: 30px;
+  border: 1px solid #E1E1E1;
+  padding: 20px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec .specific {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec .spectification .heading {
+  padding-top: 25px;
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  border-top: 1px solid #E1E1E1;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec .spectification .MainDiv {
+  padding-top: 22px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec .spectification .MainDiv .leftDiv {
+  color: #505050;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  padding-top: 10px;
+  width: 180px;
+}
+.productDetailPage .ProductDetailSection .product-Dividation .ProductDetails-Content .SpecificationSec .spectification .MainDiv .rightDiv {
+  color: #000;
+  font-family: HYQiHei;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.BannerPageDiv img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
