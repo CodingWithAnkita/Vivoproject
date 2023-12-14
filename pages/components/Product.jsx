@@ -99,7 +99,8 @@ function Product() {
 
                         {/* <img src="\images\Phone1.png" alt="" /> */}
                         <div className="Smartphones">
-                            <Swiper pagination={true} navigation={{ nextEl: ".image-swiper-button-next", prevEl: ".image-swiper-button-prev", disabledClass: "swiper-button-disabled" }}
+                            <Swiper pagination={{ clickable: true }}
+                                navigation={{ nextEl: ".image-swiper-button-next", prevEl: ".image-swiper-button-prev", disabledClass: "swiper-button-disabled" }}
                                 modules={[Navigation, Pagination, Autoplay]}
                                 spaceBetween={50}
                                 loop={true}
@@ -118,7 +119,7 @@ function Product() {
                                         slidesPerView: 1,
                                         spaceBetween: 10,
                                     },
-                                    333:{
+                                    333: {
                                         slidesPerView: 2,
                                         spaceBetween: 10,
                                     },
@@ -134,11 +135,11 @@ function Product() {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
-                                    1400:{
+                                    1400: {
                                         slidesPerView: 4,
                                         spaceBetween: 40,
                                     }
-    
+
                                 }}
 
                                 className="mySwiper">

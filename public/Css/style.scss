@@ -9,7 +9,7 @@
     src: url("/fonts/HYQiHei-65S\ Medium.ttf");
 }
 
-.text-none{
+.text-none {
     text-decoration: none;
 }
 
@@ -802,7 +802,7 @@
                             line-height: 28px;
                             text-decoration-line: strikethrough;
 
-                            @media screen and (max-width:376px) {
+                            @media screen and (max-width:476px) {
                                 font-size: 10px;
                             }
                         }
@@ -1769,8 +1769,8 @@
                                     line-height: 28px;
                                     text-decoration-line: strikethrough;
 
-                                    @media screen and (max-width:376px) {
-                                        font-size: 10px;
+                                    @media screen and (max-width:476px) {
+                                        font-size: 12px;
                                     }
                                 }
 
@@ -2119,6 +2119,13 @@
             padding-right: 100px;
             padding-bottom: 80px;
 
+
+
+            @media screen and (max-width:576px) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
             .imgDiv {
                 padding-bottom: 30px;
 
@@ -2135,6 +2142,7 @@
                     margin-bottom: 20px;
 
 
+
                     .btn1 {
                         flex: 1;
                         color: #fff;
@@ -2148,7 +2156,12 @@
                         line-height: normal;
                         border: 0px solid black;
                         outline: none;
-                        transition: all .4s
+                        transition: all .4s;
+
+                        @media screen and (max-width:998px) {
+                            padding: 11px 11px;
+                        }
+
                     }
 
                     .btn2 {
@@ -2164,6 +2177,10 @@
                         line-height: normal;
                         border: 0px solid black;
                         outline: none;
+
+                        @media screen and (max-width:998px) {
+                            padding: 11px 11px;
+                        }
                     }
                 }
 
@@ -2172,6 +2189,10 @@
             .ProductDetails-Content {
                 padding-left: 20px;
                 // padding-right: 20px;
+
+                @media screen and (max-width:376px) {
+                    padding-left: 0px;
+                }
 
                 .productName {
                     display: flex;
@@ -2188,6 +2209,10 @@
                         font-weight: 500;
                         line-height: 32px;
 
+                        @media screen and (max-width:476px) {
+                            font-size: 18px;
+                        }
+
                     }
 
                     .largeHeading {
@@ -2198,6 +2223,10 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 32px;
+
+                        @media screen and (max-width:476px) {
+                            font-size: 18px;
+                        }
                     }
                 }
 
@@ -2210,12 +2239,26 @@
                     justify-content: flex-start;
                     column-gap: 15px;
 
+                    @media screen and (max-width:998px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        row-gap: 10px;
+                    }
+
+                    @media screen and (max-width:476px) {
+                        row-gap: 5px;
+                    }
+
                     .redPrice {
                         color: #e61423;
                         font-size: 28px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 28px;
+
+                        @media screen and (max-width:476px) {
+                            font-size: 21px;
+                        }
                     }
 
                     .delprice {
@@ -2225,6 +2268,10 @@
                         font-weight: 500;
                         line-height: 28px;
                         text-decoration-line: line-through;
+
+                        @media screen and (max-width:476px) {
+                            font-size: 14px;
+                        }
                     }
 
                     .offPercent {
@@ -2236,6 +2283,10 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
+
+                        @media screen and (max-width:476px) {
+                            font-size: 11px;
+                        }
                     }
 
                     .TaxesDiv {
@@ -2327,6 +2378,14 @@
 
                     .colorImg {
                         padding-top: 20px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        column-gap: 10px;
+
+                        @media screen and (max-width:376px) {
+                            column-gap: 0px;
+                        }
 
                         .img-sec {
                             .content {
@@ -2360,6 +2419,10 @@
                         align-items: center;
                         padding-top: 20px;
 
+                        @media screen and (max-width:998px) {
+                            justify-content: start;
+                        }
+
                         .RAMDetail1 {
                             padding: 15px 20px;
                             border-radius: 5px;
@@ -2370,6 +2433,18 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 24px;
+
+
+                            @media screen and (max-width:998px) {
+                                padding: 9px 8px;
+                                font-size: 10px;
+                            }
+
+                            @media screen and (max-width:376px) {
+                                padding: 1px 5px;
+                                font-size: 10px;
+                            }
+
                         }
 
                         .RAMDetail2 {
@@ -2382,6 +2457,18 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 24px;
+
+                            @media screen and (max-width:998px) {
+                                padding: 9px 8px;
+                                font-size: 10px;
+                                margin-left: 10px;
+                            }
+
+                            @media screen and (max-width:376px) {
+                                padding: 1px 5px;
+                                font-size: 10px;
+                            }
+
                         }
 
                         .RAMDetail3 {
@@ -2394,6 +2481,18 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 24px;
+
+                            @media screen and (max-width:998px) {
+                                padding: 9px 8px;
+                                font-size: 10px;
+                                margin-left: 10px;
+                            }
+
+                            @media screen and (max-width:376px) {
+                                padding: 1px 5px;
+                                font-size: 10px;
+                            }
+
                         }
                     }
                 }
@@ -2464,6 +2563,12 @@
                         align-items: center;
                         justify-content: flex-start;
                         column-gap: 10px;
+
+                        @media screen and (max-width:998px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            row-gap: 5px;
+                        }
 
                         .pincode {
                             // display: flex;
@@ -2615,5 +2720,215 @@
     img {
         display: block;
         width: 100%;
+    }
+}
+
+.CartPage {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F5F5F5;
+
+    .cart {
+        display: flex;
+        align-items: center;
+
+        .Cart-Text1 {
+            color: #000;
+            font-family: HYQiHei;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Cart-Text2 {
+            color: #505050;
+            font-family: HYQiHei;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.ShoppingCart {
+    padding-top: 30px;
+
+    .Shop_cart {
+        .ShopProduct {
+            background-color: white;
+            padding: 22px;
+
+            .shopHeader {
+                color: #000;
+                font-family: HYQiHei;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-bottom: 1px solid #E1E1E1;
+                padding-bottom: 20px;
+            }
+
+            .shop-Product1 {
+                padding-top: 20px;
+
+                .cart-Content {
+                    .Cart-Value {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .smallHeading {
+                            color: #000;
+                            font-family: HYQiHei;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .largeHeading {
+                            color: #505050;
+                            font-family: HYQiHei;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .Incre-Decre {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 10px;
+
+                            .add {
+                                padding: 10px 20px;
+                                border-radius: 5px;
+                                border: 1px solid #505050;
+                            }
+
+                            .sub {
+                                padding: 10px 20px;
+                                border-radius: 5px;
+                                border: 1px solid #505050;
+                            }
+                        }
+
+
+                    }
+
+                    .Value {
+                        color: #000;
+                        font-family: HYQiHei;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                        padding-top: 20px;
+                    }
+
+                    .valueDiv {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+                        padding-top: 10px;
+
+                        .number {
+                            color: #505050;
+
+                            font-family: HYQiHei;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px;
+                            text-decoration-line: strikethrough;
+                        }
+
+                        .percentOff {
+                            // color:  #FFF;
+
+                            font-family: HYQiHei;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .taxes {
+                            color: #AAA;
+                            font-family: HYQiHei;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+
+            .colour {
+                color: #000;
+                font-family: HYQiHei;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+
+                span {
+                    color: #505050;
+                    text-align: center;
+                    font-family: HYQiHei;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+            }
+
+            .size {
+                color: #000;
+                font-family: HYQiHei;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+                padding-top: 5px;
+
+                span {
+                    color: #261919;
+                    text-align: center;
+                    font-family: HYQiHei;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .Coupon-code {
+            .Coupon {
+                input {
+                    border-radius: 5px;
+                    border: 1px solid #FF8C00;
+                    padding: 15px 20px;
+                    width: 390px;
+                }
+
+                .apply {
+                    color: #415FFF;
+                    font-family: HYQiHei;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                    border: none;
+                    margin-left: -50px;
+                    background: none;
+                }
+            }
+        }
     }
 }

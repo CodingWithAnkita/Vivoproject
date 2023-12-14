@@ -54,7 +54,7 @@ function ProductDetail() {
                                     <div className="ProductDetails-Content">
                                         <div className="productName">
                                             <div className='smallHeading'>T2x 5G <span className='largeHeading'>8GB+128GB Aurora Gold</span></div>
-                                          
+
                                         </div>
                                         <div className="prices">
                                             <div className="redPrice">₹20,999.00</div>
@@ -87,26 +87,21 @@ function ProductDetail() {
                                         <div className="colourDiv">
                                             <div className="color">Colour</div>
                                             <div className="colorImg">
-                                                <div className="row">
-                                                    <div className="col-md-3">
-                                                        <div className="img-sec">
-                                                            <img className='w-100' src="/images/Rectangle 25 (1).png" alt="" />
-                                                            <div className='content'>Aurora Gold</div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-3">
-                                                        <div className="img-sec">
-                                                            <img className='w-100' src="/images/Rectangle 26 (1).png" alt="" />
-                                                            <div className='content'>Glimmer Black</div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-3">
-                                                        <div className="img-sec">
-                                                            <img className='w-100' src="/images/Rectangle 27 (1).png" alt="" />
-                                                            <div className='content'>Marine Blue</div>
-                                                        </div>
-                                                    </div>
+                                                {/* <div className="row"> */}
+                                                <div className="img-sec">
+                                                    <img className='' src="/images/Rectangle 25 (1).png" alt="" />
+                                                    <div className='content'>Aurora Gold</div>
                                                 </div>
+                                                <div className="img-sec">
+                                                    <img className='' src="/images/Rectangle 26 (1).png" alt="" />
+                                                    <div className='content'>Glimmer Black</div>
+                                                </div>
+
+                                                <div className="img-sec">
+                                                    <img className='' src="/images/Rectangle 26 (1).png" alt="" />
+                                                    <div className='content'>Marine Blue</div>
+                                                </div>
+                                                {/* </div> */}
                                             </div>
 
                                         </div>
@@ -284,16 +279,16 @@ function ProductDetail() {
                                                 <div className="heading">Display</div>
                                                 <div className="MainDiv">
                                                     <table>
-                                                        <tr>
-                                                            <td className='leftDiv' >Size </td>
-                                                            <td className='rightDiv'>16.72cm (6.58-inch)</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td className='leftDiv'> Resolution </td>
-                                                            <td className='rightDiv'>2408×1080</td>
-                                                        </tr>
-
-
+                                                        <tbody>
+                                                            <tr>
+                                                                <td className='leftDiv' >Size </td>
+                                                                <td className='rightDiv'>16.72cm (6.58-inch)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td className='leftDiv'> Resolution </td>
+                                                                <td className='rightDiv'>2408×1080</td>
+                                                            </tr>
+                                                        </tbody>
                                                     </table>
 
                                                 </div>

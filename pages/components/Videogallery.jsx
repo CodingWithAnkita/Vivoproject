@@ -13,6 +13,8 @@ function Videogallery() {
 
   return (
     <div>
+      
+      {/* Use React-Modal-Video specially for open Youtube Cahnnel videos */}
 
       <div className="VideoGalleryDiv">
         <div className="container">
