@@ -1,6 +1,70 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function ProductDetail() {
+
+    const settings = {
+        // dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
+        beforeChange: function (currentSlide, nextSlide) {
+            console.log("before change", currentSlide, nextSlide);
+        },
+        afterChange: function (currentSlide) {
+            console.log("after change", currentSlide);
+        },
+
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
+
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+            // className={""}
+            // style={{ ...style, display: "block", background: "red" }}
+            // onClick={onClick}
+            >
+                <div className="BottomDiv" onClick={onClick}>
+                    <IoIosArrowDown className='downArrow' />
+                </div>
+            </div>
+
+        );
+    }
+
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+            // className={className}
+            // style={{ ...style, display: "block", background: "green" }}
+            onClick={onClick}
+            >
+                <div className="TopDiv">
+                    <IoIosArrowUp className='upArrow' />
+                </div>
+
+            </div>
+        );
+    }
+
+
     return (
         <div>
             <div className="productDetailPage">
@@ -23,24 +87,71 @@ function ProductDetail() {
                                     <div className="imgDiv">
                                         <div className="row">
                                             <div className="col-sm-2">
-                                                <div className="img1">
-                                                    <img className='' src="/images/Rectangle 25.png" alt="" />
+
+
+
+                                                <div className="smallImgDiv">
+                                                    <Slider {...settings}>
+                                                        <div className="img1">
+                                                            <img className='' src="/images/Rectangle 25.png" alt="" />
+                                                        </div>
+                                                        <div className="img2">
+                                                            <img className='' src="/images/Rectangle 26.png" alt="" />
+                                                        </div>
+                                                        <div className="img3">
+                                                            <img className='' src="/images/Rectangle 27.png" alt="" />
+                                                        </div>
+                                                        <div className="img4">
+                                                            <img className='' src="/images/Rectangle 28.png" alt="" />
+                                                        </div>
+
+                                                        <div className="img5">
+                                                            <img className='' src="/images/Rectangle 29.png" alt="" />
+                                                        </div>
+                                                    </Slider>
+
                                                 </div>
-                                                <div className="img2">
-                                                    <img className='' src="/images/Rectangle 26.png" alt="" />
-                                                </div>
-                                                <div className="img3">
-                                                    <img className='' src="/images/Rectangle 27.png" alt="" />
-                                                </div>
-                                                <div className="img4">
-                                                    <img className='' src="/images/Rectangle 28.png" alt="" />
-                                                </div>
-                                                <div className="img5">
-                                                    <img className='' src="/images/Rectangle 29.png" alt="" />
-                                                </div>
+
+                                                {/* <div className="BottomDiv">
+                                                    <IoIosArrowDown className='downArrow' />
+                                                </div> */}
+
                                             </div>
                                             <div className="col-sm-10">
-                                                <img className='w-100' src="/images/Rectangle 23 (1).png" alt="" />
+                                                <img className='w-100 DeskmobileImg' src="/images/Rectangle 23 (1).png" alt="" />
+
+
+                                                {/* Mobile Img Vieew */}
+                                                <div className="mobileViewImg">
+                                                    <Swiper
+                                                        pagination={{ clickable: true }} modules={[Pagination]}
+                                                        spaceBetween={50}
+                                                        slidesPerView={1}
+                                                        onSlideChange={() => console.log('slide change')}
+                                                        onSwiper={(swiper) => console.log(swiper)}
+                                                    >
+                                                        <div className="images">
+                                                            <SwiperSlide className='images' >
+                                                                <img className='w-100' src="\images\Rectangle 23.svg" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide><img className='w-100' src="/images/Rectangle 26.svg" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className='w-100' src="/images/Rectangle 27.svg" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className='w-100' src="/images/Rectangle 28.svg" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className='w-100' src="/images/Rectangle 29.svg" alt="" />
+                                                            </SwiperSlide>
+                                                        </div>
+
+
+                                                    </Swiper>
+                                                </div>
+
+
 
                                                 <div className="btnDiv">
                                                     <button className='btn1' >ADD TO CART</button>
@@ -48,6 +159,9 @@ function ProductDetail() {
                                                 </div>
                                             </div>
                                         </div>
+
+
+
                                     </div>
                                 </div>
                                 <div className="col-lg-6">

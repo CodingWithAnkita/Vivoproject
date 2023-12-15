@@ -168,6 +168,7 @@ function Header() {
                                                     <li>Warranty Terms</li>
                                                     <li>Shipping Policy</li>
                                                     <li>Return & Refund Policy</li>
+                                                    <Link to={'/shop'} ><li>E-Store</li></Link>
                                                 </ul>
                                             </div>
 
@@ -186,7 +187,7 @@ function Header() {
                         </div>
 
                         <div className="Middle-1">
-                            <img src="\images\vivoLogo.png" alt="" />
+                           <Link to={'/'}><img src="\images\vivoLogo.png" alt="" /></Link>
                         </div>
 
                         <div className="Right">

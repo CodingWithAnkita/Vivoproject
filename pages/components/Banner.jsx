@@ -13,7 +13,7 @@ function Banner() {
                         <div className="col-lg-12">
 
                             <Swiper
-                                pagination={true}
+                                pagination={{clickable:true}}
                                 modules={[Pagination]}
                                 spaceBetween={50}
                                 slidesPerView={1}
