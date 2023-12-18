@@ -93,20 +93,20 @@ function ProductDetail() {
                                                 <div className="smallImgDiv">
                                                     <Slider {...settings}>
                                                         <div className="img1">
-                                                            <img className='' src="/images/Rectangle 25.png" alt="" />
+                                                            <img className='w-100' src="/images/Rectangle 25.png" alt="" />
                                                         </div>
                                                         <div className="img2">
-                                                            <img className='' src="/images/Rectangle 26.png" alt="" />
+                                                            <img className='w-100' src="/images/Rectangle 26.png" alt="" />
                                                         </div>
                                                         <div className="img3">
-                                                            <img className='' src="/images/Rectangle 27.png" alt="" />
+                                                            <img className='w-100' src="/images/Rectangle 27.png" alt="" />
                                                         </div>
                                                         <div className="img4">
-                                                            <img className='' src="/images/Rectangle 28.png" alt="" />
+                                                            <img className='w-100' src="/images/Rectangle 28.png" alt="" />
                                                         </div>
 
                                                         <div className="img5">
-                                                            <img className='' src="/images/Rectangle 29.png" alt="" />
+                                                            <img className='w-100' src="/images/Rectangle 29.png" alt="" />
                                                         </div>
                                                     </Slider>
 

@@ -44,11 +44,17 @@ function Cart() {
 
                                                 <div className="Value">₹20,999.00</div>
                                                 <div className="valueDiv">
-                                                    <div className="number">₹23,999.00</div>
-                                                    <div className="percentOFF">
-                                                        <div className="percentOff">-28% off</div>
-                                                        <div className="taxes">(incl.of all taxes)</div>
+                                                    <div className="Numbers">
+                                                        <div className="number">₹23,999.00</div>
+                                                        <div className="percentOFF">
+                                                            <div className="percentOff">-28% off</div>
+                                                            <div className="taxes">(incl.of all taxes)</div>
+                                                        </div>
                                                     </div>
+                                                    <div className="RemoveItems">
+                                                            <div className="remove">Remove</div>
+                                                            <img src="/images/ic_round-close.svg" alt="" />
+                                                        </div>
 
                                                 </div>
                                                 {/* </div> */}
@@ -80,11 +86,19 @@ function Cart() {
 
                                                 <div className="Value">₹20,999.00</div>
                                                 <div className="valueDiv">
-                                                    <div className="number">₹23,999.00</div>
+                                                    <div className="Numbers">
+                                                        <div className="number">₹23,999.00</div>
 
-                                                    <div className="percentOFF">
-                                                        <div className="percentOff">-28% off</div>
-                                                        <div className="taxes">(incl.of all taxes)</div>
+                                                        <div className="percentOFF">
+                                                            <div className="percentOff">-28% off</div>
+                                                            <div className="taxes">(incl.of all taxes)</div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div className="RemoveItems">
+                                                        <div className="remove">Remove</div>
+                                                        <img src="/images/ic_round-close.svg" alt="" />
                                                     </div>
 
                                                 </div>

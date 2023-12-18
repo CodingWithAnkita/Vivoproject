@@ -28,7 +28,7 @@ function Header() {
 
 
     return (
-        <div>
+        <div className='sticky-top' >
             <div className="vivoHeader">
                 <div className="headertop">
                     <div className="container">
@@ -48,7 +48,7 @@ function Header() {
                 </div>
                 <div className="headerbottom">
 
-                    {/* <div className="container"> */}
+                    <div className="container">
 
                     <div className="header_Bottom">
                         <div className="Left">
@@ -187,7 +187,7 @@ function Header() {
                         </div>
 
                         <div className="Middle-1">
-                           <Link to={'/'}><img src="\images\vivoLogo.png" alt="" /></Link>
+                           <Link to={'/'}><img className='vivoLogo' src="\images\vivoLogo.png" alt="" /></Link>
                         </div>
 
                         <div className="Right">
@@ -351,7 +351,7 @@ function Header() {
                         </div>
                     </div>
 
-                    {/* </div> */}
+                    </div>
 
 
                 </div>
