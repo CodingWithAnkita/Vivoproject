@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function ProductDetail() {
+
+    const [mainImage,setMainimage] = useState("/images/Rectangle 25.png")
 
     const settings = {
         // dots: true,
@@ -88,24 +90,22 @@ function ProductDetail() {
                                         <div className="row">
                                             <div className="col-sm-2">
 
-
-
                                                 <div className="smallImgDiv">
                                                     <Slider {...settings}>
-                                                        <div className="img1">
+                                                        <div className="img1" onClick={()=>{setMainimage("/images/Rectangle 25.png")}}>
                                                             <img className='w-100' src="/images/Rectangle 25.png" alt="" />
                                                         </div>
-                                                        <div className="img2">
+                                                        <div className="img2" onClick={()=>{setMainimage("/images/Rectangle 26.png")}}>
                                                             <img className='w-100' src="/images/Rectangle 26.png" alt="" />
                                                         </div>
-                                                        <div className="img3">
+                                                        <div className="img3" onClick={()=>{setMainimage("/images/Rectangle 27.png")}}>
                                                             <img className='w-100' src="/images/Rectangle 27.png" alt="" />
                                                         </div>
-                                                        <div className="img4">
+                                                        <div className="img4" onClick={()=>{setMainimage("/images/Rectangle 28.png")}}>
                                                             <img className='w-100' src="/images/Rectangle 28.png" alt="" />
                                                         </div>
 
-                                                        <div className="img5">
+                                                        <div className="img5" onClick={()=>{setMainimage("/images/Rectangle 29.png")}}>
                                                             <img className='w-100' src="/images/Rectangle 29.png" alt="" />
                                                         </div>
                                                     </Slider>
@@ -118,7 +118,7 @@ function ProductDetail() {
 
                                             </div>
                                             <div className="col-sm-10">
-                                                <img className='w-100 DeskmobileImg' src="/images/Rectangle 23 (1).png" alt="" />
+                                                <img className='w-100 DeskmobileImg' src={mainImage} alt="" />
 
 
                                                 {/* Mobile Img Vieew */}
